@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    <title>Text shadow generator</title>
+    <link rel="stylesheet" href="css/style.css" >
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<h1>Text shadow generator</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-4 col-md-6">
+            <div class="card">
+                <div class="card-header bg-primary">Settings:</div>
+                <div class="card-body">
+                    <label for="font_size">Font size</label>
+                    <input class="custom-range" id="font_size" type="range" min="8" max="40"
+                           step="1" value="40">
+                    <label for="offset_x">Offset x</label>
+                    <input class="custom-range" id="offset_x" type="range" min="-15" max="15"
+                           step="1" value="-1">
+                    <label for="offset_y">Offset y</label>
+                    <input class="custom-range" id="offset_y" type="range" min="-15" max="15"
+                           step="1" value="-1">
+                    <label for="blur">Blur</label>
+                    <input class="custom-range" id="blur" type="range" min="0" max="15"
+                           step="1" value="40">
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+            <div class="card">
+                <div class="card-header bg-primary">Color:</div>
+                <div class="card-body">
+                    <input type="color"  id="color" value="#ff0000">
+                    <label for="opacity" >Opacity</label>
+                    <input class="custom-range" id="opacity" type="range" min="0" max="1" step="0.01" value="1">
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-md-12">
+            <div class="card">
+                <div class="card-header bg-primary">Result:</div>
+                <div class="card-body">
+                    <label for="resultHex" >Color in Hex:</label>
+                    <textarea id="resultHex" rows="4" readonly></textarea><br>
+                    <label for="resultRgba" >Color in RGBA:</label>
+                    <textarea id="resultRgba" rows="4" readonly></textarea><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+</body>
+</html>

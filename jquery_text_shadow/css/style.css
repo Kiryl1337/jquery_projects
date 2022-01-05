@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+    background-color: azure;
+}
+label{
+    display: block;
+}
+h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+    letter-spacing: 5px;
+    margin: 15px;
+}
+input[type="range"]{
+width: 100%;
+}
+input[type="color"]{
+    border: none;
+    background-color: transparent;
+    width: 55px;
+    height: 55px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+input[type="color"]:hover{
+    cursor: pointer;
+}
+textarea{
+    width: 100%;
+    resize: none;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+.card{
+   height: 100%;
+}
+.card-header{
+    font-weight: bold;
+    color:white;
+}
+.row > div{
+    margin-bottom: 15px;
+}
